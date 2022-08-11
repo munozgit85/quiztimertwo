@@ -12,7 +12,6 @@ font-family: fantasy;
 
 .startpage {
 align-items: center;
-position:static;
 margin-left: 20%;
 margin-right: -20%;
 margin-top: 20%;
@@ -40,4 +39,53 @@ background-color: lightblue;
 font-weight: bold;
 border: solid black 10px;
 margin-left: 35%;
+}
+
+.questionsContainer {
+margin-left: 25%;
+margin-right: 35%;
+font-size: 20px;
+}
+
+.questions {
+ font-size: 30px;
+}
+
+.answers {
+    font-size: 70px;
+    background-color: aquamarine;
+    flex-direction: column;
+    grid-column: auto;
+    min-height: fit-content;
+    justify-content: space-between;
+    justify-content: space-around;
+    display: block;
+}
+
+.prompt {
+    font-size: 30px;
+}
+
+.score {
+    align-items: center;
+    font-size:30px;
+
+}
+
+.scoreArea {
+    font-size:30px;
+
+}
+
+.inName {
+
+font-size:30px;
+}
+
+.form {
+    font-size: 30px;
+}
+
+.saveButton {
+    font-size: 30px;
 }
