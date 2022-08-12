@@ -62,6 +62,11 @@ font-size: 20px;
     display: block;
 }
 
+
+.questionsContainer .ol {
+    font-size: 30px;
+}
+
 .prompt {
     font-size: 30px;
 }

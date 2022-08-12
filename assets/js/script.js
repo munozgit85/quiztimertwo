@@ -10,7 +10,7 @@ var countdownEl = document.querySelector('#countdown');
 var scoreAreaEl = document.querySelector('#scoreArea');
 var inNameEl = document.querySelector('#inName');
 var buttonDivEl = document.querySelector('#saveButton');
-var highScoreEl = document.querySelector('#highScores')
+var highScoreEl = document.querySelector('#highScores');
 
 //variables 
 var timer = 50;
@@ -60,6 +60,7 @@ var questions = [
         {text: "parseInt", correct:false }
     ]
     }
+
 ];
 
 // start quiz on click  
@@ -214,13 +215,26 @@ function getSavedScores() {
     savedInit = JSON.parse(savedInit);
 
     document.getElementById("highScores").innerHTML = savedInit + " - " + savedScore;
-
-    highScores.push(newScore);
-   
-  highScores.sort((a, b) => b.score - a.score);
-   
+  
+ 
 }   
+
+function saveHighScore(e) {
+console.log("clicked the view high scores button");
+e.preventDefault();
+
+const highScores = {score: Math.floor[Math.random() * 100],
+    inNameEl:inNameEl.value
+};
+
+highScores.push(score);
+highScores.sort((a,b) => b.highScores - a.highScores);
+highScores.splice(5);
+console.log(saveHighScore)
+
+}
 
 
 //event listeners
 startButtonEl.addEventListener("click", startQuiz);
+highScoreEl .addEventListener("click",getSavedScores);
